@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  text-transform: none;
+  color: inherit;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+/*# sourceMappingURL=estilos.css.map */

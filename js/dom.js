@@ -58,7 +58,6 @@ producto.push(new TodosLosProductos("5"," Quest 4", "15.499", "nike","../imagene
                 `;
             modalCarrito.appendChild(carritoContainer);
             });
-            // Dibujo el total y lo appendeo en el div capturado y guardado en la variable modalCarrito
             const totalContainer = document.createElement("div");
             totalContainer.className = "total-carrito";
             totalContainer.innerHTML = `<div class= "total"> TOTAL $ ${total}</div>

@@ -1,18 +1,42 @@
-.cardProductos{
-    border: 1px solid red;
-    margin: 2rem;
-    padding: 2rem;
-}
+    #cardProductos{
+        margin: 1.5rem;
+        display: grid;
+        align-content: space-evenly;
+        justify-content: center;
+        justify-items: start;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:repeat(2,1fr);
+    }
 .card {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
-        padding: 1rem;
+        margin-bottom: 1em;
         &__content{
-            display: flex;
-            justify-content: space-around;
+            display:flex;
             flex-direction: column;
+            padding:1em;  
         }
+        &__title{
+            padding:.5em;
+            font-size: clamp(.2rem, 2.5vh, 3rem);
+        }
+    }
+    .btn {
+        border: 1px solid rgb(60, 59, 59);
+        display: flex;
+        justify-content: center;
+    }
 
+    @media (max-width: 1200px) {
+        #cardProductos{
+            grid-template-columns: repeat(3,1fr);
+        grid-template-rows:repeat(2,1fr);
+        }
+    }
+    @media (max-width: 700px) {
+        #cardProductos{
+            grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(3,1fr);
+        }
     }
